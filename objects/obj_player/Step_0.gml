@@ -44,4 +44,9 @@ if (chao && pulando)
     velocidade_vertical += -pulo;
 }
 
+if(sign(avanco_h) == 1){
+	sprite_index = spr_player_parado_direita;
+}if(sign(avanco_h) == -1){
+	sprite_index = spr_player_parado_esquerda;
+}
 

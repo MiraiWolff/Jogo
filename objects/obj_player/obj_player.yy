@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_player",
-    "path": "sprites/spr_player/spr_player.yy",
+    "name": "spr_player_parado_direita",
+    "path": "sprites/spr_player_parado_direita/spr_player_parado_direita.yy",
   },
   "spriteMaskId": null,
   "visible": true,

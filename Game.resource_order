@@ -21,5 +21,6 @@
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
     {"name":"obj_menu","order":2,"path":"objects/obj_menu/obj_menu.yy",},
+    {"name":"spr_player_parado_esquerda","order":2,"path":"sprites/spr_player_parado_esquerda/spr_player_parado_esquerda.yy",},
   ],
 }
