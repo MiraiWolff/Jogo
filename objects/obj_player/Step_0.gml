@@ -2,6 +2,7 @@ var chao = place_meeting(x, y + 1, obj_chao);
 var esquerda = keyboard_check(ord("A"));
 var direita = keyboard_check(ord("D"));
 var pulando = keyboard_check_pressed(ord("W"));
+var coleta = keyboard_check(vk_space);
 
 //MOVIMENTO HORIZONTAL
 var avanco_h = (direita - esquerda) * velocidade_h_max; 
@@ -49,4 +50,14 @@ if(sign(avanco_h) == 1){
 }if(sign(avanco_h) == -1){
 	sprite_index = spr_player_parado_esquerda;
 }
+
+//SE SEGURAR ESPAÇO INICIA A HITBOX DE COLETA
+if(coleta){
+	instance_create_layer(x + 30, y, "instances", obj_hitbox_coleta);
+}
+
+
+
+
+
 

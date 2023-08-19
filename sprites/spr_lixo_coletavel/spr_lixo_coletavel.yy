@@ -1,11 +1,11 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "spr_player_parado_esquerda",
-  "bbox_bottom": 35,
-  "bbox_left": 13,
-  "bbox_right": 33,
-  "bbox_top": 4,
+  "name": "spr_lixo_coletavel",
+  "bbox_bottom": 15,
+  "bbox_left": 2,
+  "bbox_right": 14,
+  "bbox_top": 0,
   "bboxMode": 0,
   "collisionKind": 1,
   "collisionTolerance": 0,
@@ -13,14 +13,14 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6ad733a9-edc9-4a42-a03f-a1d97142ab21",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"46b9f5d0-662f-453a-b95b-4c5d3f9f9ee6",},
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 37,
+  "height": 16,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"1659cc49-b531-4664-9ffe-a657da404a89","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"ece94159-3418-47d8-9b56-023d5c4404ff","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": null,
   "origin": 0,
@@ -32,7 +32,7 @@
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "spr_player_parado_esquerda",
+    "name": "spr_lixo_coletavel",
     "autoRecord": true,
     "backdropHeight": 768,
     "backdropImageOpacity": 0.5,
@@ -54,7 +54,7 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"6ad733a9-edc9-4a42-a03f-a1d97142ab21","path":"sprites/spr_player_parado_esquerda/spr_player_parado_esquerda.yy",},},},"Disabled":false,"id":"8f252f94-a1b2-447e-b99a-a0e396180276","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"46b9f5d0-662f-453a-b95b-4c5d3f9f9ee6","path":"sprites/spr_lixo_coletavel/spr_lixo_coletavel.yy",},},},"Disabled":false,"id":"c4ae5130-9f12-4b7d-8503-8c6c6778af76","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 50,
+  "width": 16,
 }
