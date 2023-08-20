@@ -13,6 +13,7 @@ if (!chao)
 {
   velocidade = velocidade_voar;
   velocidade_vertical += gravidade;
+  
 }
 else
 {
@@ -24,7 +25,7 @@ if (place_meeting(x + avanco_h, y, obj_chao))
 {while(!place_meeting(x + sign(avanco_h), y, obj_chao)){
 x += sign(avanco_h);
 }
-avanco_h = 0;
+	avanco_h = 0;
 }
 
 x += avanco_h;
@@ -42,18 +43,77 @@ y += velocidade_vertical;
 //PULO
 if (chao && pulando) 
 {
+	estado = 2;
     velocidade_vertical += -pulo;
 }
 
-if(sign(avanco_h) == 1){
-	sprite_index = spr_player_parado_direita;
-}if(sign(avanco_h) == -1){
-	sprite_index = spr_player_parado_esquerda;
+//LADO PARADO
+if(avanco_h != 0){ 
+	
+	xscale = sign(avanco_h);
+	image_xscale = xscale;
 }
-
 //SE SEGURAR ESPAÇO INICIA A HITBOX DE COLETA
 if(coleta){
-	instance_create_layer(x + 30, y, "instances", obj_hitbox_coleta);
+	
+	instance_create_layer(x + 10, y - 20, "instances", obj_hitbox_coleta);
+}
+
+//TROCA DE ESTADOS
+switch(estado){
+	//ESTADO PARADO
+	case 0:{
+			sprite_index = spr_player_parado_direita;
+			
+			if(esquerda || direita){
+				
+				estado = 1;
+				
+				}else if(!chao){
+					
+					estado = 2;
+					
+				}
+		
+		break;
+	}
+	//ESTADO CORRENDO
+	case 1:{
+		
+			sprite_index = spr_player_correndo;
+			
+		if(avanco_h == 0){
+			
+			estado = 0;
+			
+		}else if(!chao){
+			
+					estado = 2;
+					
+		}
+		break;
+	}
+	//ESTADO PULANDO
+	case 2:{
+		if(velocidade_vertical > 0){
+			
+			sprite_index = spr_player_caindo;
+			
+		}else if(velocidade_vertical < 0){
+			
+			sprite_index = spr_player_pulando;
+			
+			//GARANTINDO QUE ANIMAÇÃO NÃO SE REPITA
+			if(image_index >= image_number - 1){
+				image_index = image_number - 1;
+			}
+			
+		}else if(chao){
+			
+			estado = 0
+		}
+		break;
+	}
 }
 
 

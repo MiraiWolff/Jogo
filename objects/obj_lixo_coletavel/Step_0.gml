@@ -7,7 +7,7 @@ if(coletando){
 	target_x = obj_player.x;
 	target_y = obj_player.y;
 	speed = 1; 
-	direction = point_direction(x, y, target_x, target_y);
+	direction = point_direction(x, y + 20, target_x, target_y);
 	
 //SE ESTIVER SENDO SUGADO E CHEGAR NO PLAYER SE DESTROY	
 	if(coletado){
