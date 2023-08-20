@@ -9,6 +9,7 @@ if(coletando){
 	speed = 1; 
 	direction = point_direction(x, y + 20, target_x, target_y);
 	
+	
 //SE ESTIVER SENDO SUGADO E CHEGAR NO PLAYER SE DESTROY	
 	if(coletado){
 		instance_destroy();

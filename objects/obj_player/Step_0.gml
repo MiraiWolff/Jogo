@@ -56,11 +56,13 @@ if(avanco_h != 0){
 }
 //SE SEGURAR ESPAÇO INICIA A HITBOX DE COLETA
 if(coleta){
+	
 	if(image_xscale > 0){
 		instance_create_layer(x + 10, y - 20, "instances", obj_hitbox_coleta);
 	}else if(image_xscale < 0){
 		instance_create_layer(x - 10, y - 20, "instances", obj_hitbox_coleta);
 	}
+	
 }
 
 //TROCA DE ESTADOS
@@ -112,9 +114,12 @@ switch(estado){
 				image_index = image_number - 1;
 			}
 			
-		}else if(chao){
+		}else if(chao && avanco_h == 0){
 			
-			estado = 0
+			estado = 0;
+		}else if(chao && avanco_h != 0){
+			
+			estado = 1;
 		}
 		break;
 	}
