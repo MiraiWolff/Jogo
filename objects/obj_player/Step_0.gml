@@ -52,11 +52,15 @@ if(avanco_h != 0){
 	
 	xscale = sign(avanco_h);
 	image_xscale = xscale;
+	
 }
 //SE SEGURAR ESPAÇO INICIA A HITBOX DE COLETA
 if(coleta){
-	
-	instance_create_layer(x + 10, y - 20, "instances", obj_hitbox_coleta);
+	if(image_xscale > 0){
+		instance_create_layer(x + 10, y - 20, "instances", obj_hitbox_coleta);
+	}else if(image_xscale < 0){
+		instance_create_layer(x - 10, y - 20, "instances", obj_hitbox_coleta);
+	}
 }
 
 //TROCA DE ESTADOS
@@ -65,7 +69,7 @@ switch(estado){
 	case 0:{
 			sprite_index = spr_player_parado_direita;
 			
-			if(esquerda || direita){
+			if(avanco_h != 0){
 				
 				estado = 1;
 				
