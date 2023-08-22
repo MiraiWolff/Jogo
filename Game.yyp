@@ -35,6 +35,7 @@
   },
   "resources": [
     {"id":{"name":"spr_chao","path":"sprites/spr_chao/spr_chao.yy",},},
+    {"id":{"name":"spr_player_ataque","path":"sprites/spr_player_ataque/spr_player_ataque.yy",},},
     {"id":{"name":"spr_player_pulando","path":"sprites/spr_player_pulando/spr_player_pulando.yy",},},
     {"id":{"name":"ft_menu","path":"fonts/ft_menu/ft_menu.yy",},},
     {"id":{"name":"spr_player_correndo","path":"sprites/spr_player_correndo/spr_player_correndo.yy",},},

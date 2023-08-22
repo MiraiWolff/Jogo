@@ -3,6 +3,7 @@ var esquerda = keyboard_check(ord("A"));
 var direita = keyboard_check(ord("D"));
 var pulando = keyboard_check_pressed(ord("W"));
 var coleta = keyboard_check(vk_space);
+var ataque = keyboard_check_pressed(ord("K"));
 
 //MOVIMENTO HORIZONTAL
 var avanco_h = (direita - esquerda) * velocidade_h_max; 
@@ -65,6 +66,13 @@ if(coleta){
 	
 }
 
+//ATAQUE
+if(ataque){
+	
+	estado = 3;
+	
+}
+
 //TROCA DE ESTADOS
 switch(estado){
 	//ESTADO PARADO
@@ -94,10 +102,19 @@ switch(estado){
 			
 		}else if(!chao){
 			
-					estado = 2;
+			estado = 2;
+			image_index = 0;
 					
-		}
+		}else if(ataque){
+				
+			estado = 3;
+			velocidade_h_max = 0;
+			image_index = 0;
+				
+			}
+		
 		break;
+		
 	}
 	//ESTADO PULANDO
 	case 2:{
@@ -122,6 +139,21 @@ switch(estado){
 			estado = 1;
 		}
 		break;
+	}
+	//ESTADO ATACANDO
+	case 3:{
+		 
+		 velocidade_h_max = 0;
+		 
+		sprite_index = spr_player_ataque;
+	
+		if(image_index > image_number - 1){
+			
+			estado = 0;
+			velocidade_h_max = 4;
+			
+		}
+	
 	}
 }
 
