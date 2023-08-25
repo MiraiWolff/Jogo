@@ -69,6 +69,7 @@ if(coleta){
 //ATAQUE
 if(ataque){
 	
+	instance_create_layer(x, y,"instances",obj_player_ataque);
 	estado = 3;
 	
 }
@@ -122,6 +123,7 @@ switch(estado){
 			
 			sprite_index = spr_player_caindo;
 			
+			
 		}else if(velocidade_vertical < 0){
 			
 			sprite_index = spr_player_pulando;
@@ -143,9 +145,9 @@ switch(estado){
 	//ESTADO ATACANDO
 	case 3:{
 		 
-		 velocidade_h_max = 0;
+		 sprite_index = spr_player_ataque;
 		 
-		sprite_index = spr_player_ataque;
+		 velocidade_h_max = 0;
 	
 		if(image_index > image_number - 1){
 			
