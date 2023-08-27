@@ -77,9 +77,11 @@ show_debug_message(vida);
 //RECEBENDO DANO E FICANDO INTANGIVEL
 if((place_meeting(x, y, obj_inimigo) && obj_inimigo.estado == 4)){
 	
+	
 	if alarm[0] <=  0{
 		vida -= 1;
 		alarm[0] = 180;
+		screenshake(3);
 	}
 
 }
@@ -90,12 +92,12 @@ if(alarm[0] > 0){
 		}else if(image_alpha <= 0){
 			alfa_hit = 0.05;
 		}
-	
 		image_alpha += alfa_hit;	
 	}else{
 	
 		image_alpha = 1;
 	}
+	
 show_debug_message(image_alpha);
 show_debug_message(alarm[0]);
 //MORTE
@@ -181,6 +183,8 @@ switch(estado){
 			
 			estado = 1;
 		}
+		
+		
 		break;
 	}
 	//ESTADO ATACANDO

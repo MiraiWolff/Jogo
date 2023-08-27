@@ -58,11 +58,13 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"spr_player_vida","path":"sprites/spr_player_vida/spr_player_vida.yy",},},
     {"id":{"name":"spr_player_parado_direita","path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},},
+    {"id":{"name":"scr_funcoes","path":"scripts/scr_funcoes/scr_funcoes.yy",},},
     {"id":{"name":"spr_lixo_coletavel","path":"sprites/spr_lixo_coletavel/spr_lixo_coletavel.yy",},},
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
     {"id":{"name":"spr_inimigo_ataque","path":"sprites/spr_inimigo_ataque/spr_inimigo_ataque.yy",},},
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"spr_inimigo_hit","path":"sprites/spr_inimigo_hit/spr_inimigo_hit.yy",},},
+    {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [
