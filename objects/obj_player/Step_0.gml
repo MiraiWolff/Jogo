@@ -5,6 +5,12 @@ var pulando = keyboard_check_pressed(ord("W"));
 var coleta = keyboard_check(vk_space);
 var ataque = keyboard_check_pressed(ord("K"));
 
+var restart = keyboard_check_pressed(ord("R"));
+
+if(restart){
+	game_restart();
+}
+
 //MOVIMENTO HORIZONTAL
 var avanco_h = (direita - esquerda) * velocidade_h_max; 
 

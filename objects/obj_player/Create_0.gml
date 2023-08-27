@@ -1,4 +1,6 @@
-
+var cam = instance_create_layer(x, y, layer, obj_camera);
+cam.alvo = id;
+randomize();
 velocidade = 2
 gravidade = 0.3;
 velocidade_terreno = velocidade;
@@ -10,4 +12,4 @@ pulo = 9;
 lado = 0;
 estado = 0;
 xscale = 1;
-
+dano = 1;
