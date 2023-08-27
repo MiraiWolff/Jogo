@@ -13,3 +13,6 @@ lado = 0;
 estado = 0;
 xscale = 1;
 dano = 1;
+vida = 2;
+alfa_hit = 0;
+alarm[0] = 0;

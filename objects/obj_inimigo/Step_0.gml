@@ -57,6 +57,8 @@ if (parede){
 
 x += avanco_h;
 
+
+
 //ESTADOS
 switch(estado){
 	
@@ -85,6 +87,8 @@ switch(estado){
 			timer_estado = 0;
 			
 		}
+		scr_ataque_inimigo_melee(obj_player, dist, xscale);
+		
 		
 		break;
 	}
@@ -117,7 +121,7 @@ switch(estado){
 		
 			instance_destroy();
 			instance_create_layer(x, y - 30,"instances",obj_lixo_coletavel);
-		
+			
 		}
 		
 		break;
@@ -149,12 +153,8 @@ switch(estado){
 			estado = 1;
 		
 		}
+		scr_ataque_inimigo_melee(obj_player, dist, xscale);
 		
-		if(ataque){
-			
-			avanco_h = 0;
-			estado = 4;
-		}
 		
 		break;
 		

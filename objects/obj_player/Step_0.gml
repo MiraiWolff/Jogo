@@ -4,8 +4,8 @@ var direita = keyboard_check(ord("D"));
 var pulando = keyboard_check_pressed(ord("W"));
 var coleta = keyboard_check(vk_space);
 var ataque = keyboard_check_pressed(ord("K"));
-
 var restart = keyboard_check_pressed(ord("R"));
+show_debug_message(estado);
 
 if(restart){
 	game_restart();
@@ -71,6 +71,41 @@ if(coleta){
 	}
 	
 }
+
+show_debug_message(vida);
+
+//RECEBENDO DANO E FICANDO INTANGIVEL
+if((place_meeting(x, y, obj_inimigo) && obj_inimigo.estado == 4)){
+	
+	if alarm[0] <=  0{
+		vida -= 1;
+		alarm[0] = 180;
+	}
+
+}
+if(alarm[0] > 0){
+		
+		if(image_alpha >= 1){
+			alfa_hit = -0.05;
+		}else if(image_alpha <= 0){
+			alfa_hit = 0.05;
+		}
+	
+		image_alpha += alfa_hit;	
+	}else{
+	
+		image_alpha = 1;
+	}
+show_debug_message(image_alpha);
+show_debug_message(alarm[0]);
+//MORTE
+if(vida <= 0){
+	
+	estado = 4;
+	image_alpha = 1;
+	alarm[0] = 0;
+}
+
 
 //ATAQUE
 if(ataque){
@@ -161,7 +196,24 @@ switch(estado){
 			velocidade_h_max = 4;
 			
 		}
-	
+		break;
+	}
+	//ESTADO MORTE
+	case 4:{
+		
+		velocidade_h_max = 0;
+		pulo = 0;
+		if(sprite_index != spr_player_morte){
+			
+			image_index = 0;
+			sprite_index = spr_player_morte;
+		}
+		
+		if(image_index >= image_number - 1){
+		
+			image_index = image_number - 1;
+		}
+		break;
 	}
 }
 
