@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Spr_menu",
-    "path": "sprites/Spr_menu/Spr_menu.yy",
+    "name": "Spr_menu19",
+    "path": "sprites/Spr_menu19/Spr_menu19.yy",
   },
   "spriteMaskId": null,
   "visible": true,
