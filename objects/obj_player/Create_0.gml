@@ -16,3 +16,5 @@ dano = 1;
 vida = 2;
 alfa_hit = 0;
 alarm[0] = 0;
+dinheiro = 0;
+lixos_coletados = 0;

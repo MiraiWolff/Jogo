@@ -67,6 +67,7 @@
     {"id":{"name":"spr_player_parado_direita","path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},},
     {"id":{"name":"scr_funcoes","path":"scripts/scr_funcoes/scr_funcoes.yy",},},
     {"id":{"name":"spr_lixo_coletavel","path":"sprites/spr_lixo_coletavel/spr_lixo_coletavel.yy",},},
+    {"id":{"name":"obj_reciclagem","path":"objects/obj_reciclagem/obj_reciclagem.yy",},},
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
     {"id":{"name":"Spr_menu19","path":"sprites/Spr_menu19/Spr_menu19.yy",},},
     {"id":{"name":"spr_inimigo_ataque","path":"sprites/spr_inimigo_ataque/spr_inimigo_ataque.yy",},},
