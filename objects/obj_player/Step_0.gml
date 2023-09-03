@@ -5,7 +5,17 @@ var pulando = keyboard_check_pressed(ord("W"));
 var coleta = keyboard_check(vk_space);
 var ataque = keyboard_check_pressed(ord("K"));
 var restart = keyboard_check_pressed(ord("R"));
+var room_reciclagem = keyboard_check_pressed(ord("T"));
 show_debug_message(estado);
+
+//VAI PARA RM_RECICLAGEM
+if(room_reciclagem){
+	
+	room_goto(rm_reciclagem);
+
+}
+
+
 
 if(restart){
 	game_restart();

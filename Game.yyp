@@ -38,6 +38,7 @@
     "IDEVersion": "2023.6.0.92",
   },
   "resources": [
+    {"id":{"name":"Object11","path":"objects/Object11/Object11.yy",},},
     {"id":{"name":"spr_chao","path":"sprites/spr_chao/spr_chao.yy",},},
     {"id":{"name":"spr_player_ataque","path":"sprites/spr_player_ataque/spr_player_ataque.yy",},},
     {"id":{"name":"spr_player_pulando","path":"sprites/spr_player_pulando/spr_player_pulando.yy",},},
@@ -47,12 +48,14 @@
     {"id":{"name":"spr_player_correndo","path":"sprites/spr_player_correndo/spr_player_correndo.yy",},},
     {"id":{"name":"obj_player_ataque","path":"objects/obj_player_ataque/obj_player_ataque.yy",},},
     {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"rm_reciclagem","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},},
     {"id":{"name":"spr_inimigo_morte","path":"sprites/spr_inimigo_morte/spr_inimigo_morte.yy",},},
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"scr_ataque_inimigo_melee","path":"scripts/scr_ataque_inimigo_melee/scr_ataque_inimigo_melee.yy",},},
     {"id":{"name":"obj_hitbox_coleta","path":"objects/obj_hitbox_coleta/obj_hitbox_coleta.yy",},},
     {"id":{"name":"Sprite21","path":"sprites/Sprite21/Sprite21.yy",},},
     {"id":{"name":"spr_player_ataque_hitbox","path":"sprites/spr_player_ataque_hitbox/spr_player_ataque_hitbox.yy",},},
+    {"id":{"name":"Sprite22","path":"sprites/Sprite22/Sprite22.yy",},},
     {"id":{"name":"spr_player_morte","path":"sprites/spr_player_morte/spr_player_morte.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"spr_hitbox_coleta","path":"sprites/spr_hitbox_coleta/spr_hitbox_coleta.yy",},},
@@ -77,6 +80,7 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_reciclagem","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},},
   ],
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
