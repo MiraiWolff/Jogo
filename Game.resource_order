@@ -23,6 +23,7 @@
   "ResourceOrderSettings": [
     {"name":"Object11","order":11,"path":"objects/Object11/Object11.yy",},
     {"name":"spr_player_pulando","order":4,"path":"sprites/spr_player_pulando/spr_player_pulando.yy",},
+    {"name":"Sprit_quit","order":3,"path":"sprites/Sprit_quit/Sprit_quit.yy",},
     {"name":"obj_inimigo","order":5,"path":"objects/obj_inimigo/obj_inimigo.yy",},
     {"name":"spr_inimigo_andar","order":3,"path":"sprites/spr_inimigo_andar/spr_inimigo_andar.yy",},
     {"name":"spr_player_correndo","order":2,"path":"sprites/spr_player_correndo/spr_player_correndo.yy",},
@@ -30,6 +31,7 @@
     {"name":"rm_menu","order":1,"path":"rooms/rm_menu/rm_menu.yy",},
     {"name":"rm_reciclagem","order":2,"path":"rooms/rm_reciclagem/rm_reciclagem.yy",},
     {"name":"spr_inimigo_morte","order":2,"path":"sprites/spr_inimigo_morte/spr_inimigo_morte.yy",},
+    {"name":"Obj_quit","order":4,"path":"objects/Obj_quit/Obj_quit.yy",},
     {"name":"obj_hitbox_coleta","order":4,"path":"objects/obj_hitbox_coleta/obj_hitbox_coleta.yy",},
     {"name":"Sprite21","order":3,"path":"sprites/Sprite21/Sprite21.yy",},
     {"name":"spr_player_ataque_hitbox","order":5,"path":"sprites/spr_player_ataque_hitbox/spr_player_ataque_hitbox.yy",},
