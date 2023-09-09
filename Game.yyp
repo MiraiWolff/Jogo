@@ -85,8 +85,10 @@
     {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
     {"id":{"name":"spr_inimigo_hit","path":"sprites/spr_inimigo_hit/spr_inimigo_hit.yy",},},
     {"id":{"name":"Spr_start","path":"sprites/Spr_start/Spr_start.yy",},},
+    {"id":{"name":"obj_lixo_saco_plastico","path":"objects/obj_lixo_saco_plastico/obj_lixo_saco_plastico.yy",},},
     {"id":{"name":"obj_screenshake","path":"objects/obj_screenshake/obj_screenshake.yy",},},
     {"id":{"name":"Spr_menu","path":"sprites/Spr_menu/Spr_menu.yy",},},
+    {"id":{"name":"spr_lixo_saco_plastico","path":"sprites/spr_lixo_saco_plastico/spr_lixo_saco_plastico.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

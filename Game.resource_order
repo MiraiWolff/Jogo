@@ -59,6 +59,8 @@
     {"name":"obj_camera","order":7,"path":"objects/obj_camera/obj_camera.yy",},
     {"name":"spr_inimigo_hit","order":1,"path":"sprites/spr_inimigo_hit/spr_inimigo_hit.yy",},
     {"name":"Spr_start","order":1,"path":"sprites/Spr_start/Spr_start.yy",},
+    {"name":"obj_lixo_saco_plastico","order":7,"path":"objects/obj_lixo_saco_plastico/obj_lixo_saco_plastico.yy",},
     {"name":"obj_screenshake","order":8,"path":"objects/obj_screenshake/obj_screenshake.yy",},
+    {"name":"spr_lixo_saco_plastico","order":6,"path":"sprites/spr_lixo_saco_plastico/spr_lixo_saco_plastico.yy",},
   ],
 }
