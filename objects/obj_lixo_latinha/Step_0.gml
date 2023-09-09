@@ -1,4 +1,4 @@
-coleta = place_meeting(x, y, Object11);
+coleta = place_meeting(x, y, obj_lixo_amarelo);
 coletando = place_meeting(x, y, obj_hitbox_coleta);
 coletado = place_meeting(x, y, obj_player);
 var esquerda = keyboard_check(ord("A"));

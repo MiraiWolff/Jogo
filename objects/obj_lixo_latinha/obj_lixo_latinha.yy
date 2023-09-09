@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_lixo_coletavel",
+  "name": "obj_lixo_latinha",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
@@ -10,8 +10,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Lixos",
+    "path": "folders/Objects/Lixos.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_lixo_coletavel",
-    "path": "sprites/spr_lixo_coletavel/spr_lixo_coletavel.yy",
+    "name": "spr_lixo_latinha",
+    "path": "sprites/spr_lixo_latinha/spr_lixo_latinha.yy",
   },
   "spriteMaskId": null,
   "visible": true,

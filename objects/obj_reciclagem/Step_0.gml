@@ -2,7 +2,7 @@
 //LIXO COLETAVEL
 if(alarm[0] > 0 && criar == 1){
 
-	instance_create_layer(92, 29, "instances", obj_lixo_coletavel);
+	instance_create_layer(92, 29, "instances", obj_lixo_latinha);
 	//ZERA O ALARME PARA ASSIM CRIAR SÓ UM
 	alarm[0] = 0;
 }

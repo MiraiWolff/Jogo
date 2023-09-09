@@ -1,13 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object11",
+  "name": "obj_lixo_marrom",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Lixos",
+    "path": "folders/Objects/Lixos.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite22",
-    "path": "sprites/Sprite22/Sprite22.yy",
+    "name": "spr_lixo_marrom",
+    "path": "sprites/spr_lixo_marrom/spr_lixo_marrom.yy",
   },
   "spriteMaskId": null,
   "visible": true,
