@@ -2,7 +2,7 @@
 //LIXO COLETAVEL
 if(alarm[0] > 0 && criar == 1){
 	
-	tipo_lixo = choose(0, 1);
+	tipo_lixo = choose(0, 1, 2, 3);
 	
 	switch(tipo_lixo){
 	
@@ -13,6 +13,16 @@ if(alarm[0] > 0 && criar == 1){
 		
 		case 1:{
 			instance_create_layer(92, 29, "instances", obj_lixo_saco_plastico);
+			break;
+		}
+		
+		case 2:{
+			instance_create_layer(92, 29, "instances", obj_lixo_papel);
+			break;
+		}
+		
+		case 3:{
+			instance_create_layer(92, 29, "instances", obj_lixo_vidro);
 			break;
 		}
 	
