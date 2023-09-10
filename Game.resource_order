@@ -5,6 +5,7 @@
     {"name":"Fonts","order":7,"path":"folders/Fonts.yy",},
     {"name":"Notes","order":13,"path":"folders/Notes.yy",},
     {"name":"Objects","order":9,"path":"folders/Objects.yy",},
+    {"name":"Lixos","order":17,"path":"folders/Objects/Lixos.yy",},
     {"name":"Menu","order":10,"path":"folders/Objects/Menu.yy",},
     {"name":"Particle Systems","order":15,"path":"folders/Particle Systems.yy",},
     {"name":"Paths","order":4,"path":"folders/Paths.yy",},
@@ -20,7 +21,6 @@
     {"name":"Player","order":3,"path":"folders/Sprites/Player.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Lixos","order":17,"path":"folders/Objects/Lixos.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_lixo_papel","order":7,"path":"sprites/spr_lixo_papel/spr_lixo_papel.yy",},
@@ -49,6 +49,7 @@
     {"name":"spr_hitbox_coleta","order":2,"path":"sprites/spr_hitbox_coleta/spr_hitbox_coleta.yy",},
     {"name":"obj_chao","order":1,"path":"objects/obj_chao/obj_chao.yy",},
     {"name":"obj_lixo_latinha","order":2,"path":"objects/obj_lixo_latinha/obj_lixo_latinha.yy",},
+    {"name":"spr_player_sugando","order":8,"path":"sprites/spr_player_sugando/spr_player_sugando.yy",},
     {"name":"spr_player_caindo","order":1,"path":"sprites/spr_player_caindo/spr_player_caindo.yy",},
     {"name":"obj_lixo_marrom","order":3,"path":"objects/obj_lixo_marrom/obj_lixo_marrom.yy",},
     {"name":"obj_menu","order":1,"path":"objects/obj_menu/obj_menu.yy",},

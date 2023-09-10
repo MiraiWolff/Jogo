@@ -72,8 +72,9 @@ if(avanco_h != 0){
 	
 }
 //SE SEGURAR ESPAÇO INICIA A HITBOX DE COLETA
-if(coleta){
+if(coleta && chao){
 	
+	estado = 5;
 	if(image_xscale > 0){
 		instance_create_layer(x + 10, y - 20, "instances", obj_hitbox_coleta);
 	}else if(image_xscale < 0){
@@ -131,6 +132,9 @@ if(ataque){
 switch(estado){
 	//ESTADO PARADO
 	case 0:{
+		
+			velocidade_h_max = 4;
+			pulo = 9;
 			sprite_index = spr_player_parado_direita;
 			
 			if(avanco_h != 0){
@@ -229,6 +233,25 @@ switch(estado){
 		}
 		break;
 	}
+	//ESTADO COLETA
+	case 5:{
+	
+		velocidade_h_max = 0;
+		pulo = 0;
+		if(sprite_index != spr_player_sugando){
+			
+			image_index = 0;
+			sprite_index = spr_player_sugando;
+		}
+		
+		if(!coleta){
+			
+			estado = 0;
+		}
+		
+		break;
+	}
+	
 }
 
 
