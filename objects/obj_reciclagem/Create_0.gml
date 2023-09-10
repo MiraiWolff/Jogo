@@ -1,6 +1,6 @@
 tipo_lixo = 0;
 
-tipo_lixo = choose(0, 1, 2, 3);
+tipo_lixo = choose(0, 1, 2, 3, 4);
 
 if(tipo_lixo == 0){
 	
@@ -17,6 +17,10 @@ if(tipo_lixo == 0){
 }else if(tipo_lixo == 3){
 
 	instance_create_layer(92, 29, "instances", obj_lixo_vidro);
+
+}else if(tipo_lixo == 4){
+
+	instance_create_layer(92, 29, "instances", obj_lixo_organico);
 
 }
 
