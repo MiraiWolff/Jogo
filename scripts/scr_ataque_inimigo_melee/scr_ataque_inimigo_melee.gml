@@ -11,5 +11,6 @@ function scr_ataque_inimigo_melee(outro, dist, xscale){
 		
 		avanco_h = 0;
 		estado = 4;
+		
 	}
 }

@@ -15,8 +15,6 @@ if(room_reciclagem){
 
 }
 
-
-
 if(restart){
 	game_restart();
 }
@@ -86,8 +84,7 @@ if(coleta && chao){
 show_debug_message(vida);
 
 //RECEBENDO DANO E FICANDO INTANGIVEL
-if((place_meeting(x, y, obj_inimigo) && obj_inimigo.estado == 4)){
-	
+if(place_meeting(x, y, obj_inimigo_lixo_tiro)){
 	
 	if alarm[0] <=  0{
 		vida -= 1;
@@ -111,6 +108,7 @@ if(alarm[0] > 0){
 	
 show_debug_message(image_alpha);
 show_debug_message(alarm[0]);
+
 //MORTE
 if(vida <= 0){
 	
