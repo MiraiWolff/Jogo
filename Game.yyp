@@ -37,7 +37,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.1.102",
+    "IDEVersion": "2023.6.0.92",
   },
   "resources": [
     {"id":{"name":"spr_inimigo_lixo_ataque","path":"sprites/spr_inimigo_lixo_ataque/spr_inimigo_lixo_ataque.yy",},},
@@ -50,6 +50,7 @@
     {"id":{"name":"spr_inimigo_lixo","path":"sprites/spr_inimigo_lixo/spr_inimigo_lixo.yy",},},
     {"id":{"name":"spr_player_pulando","path":"sprites/spr_player_pulando/spr_player_pulando.yy",},},
     {"id":{"name":"obj_lixo_papel","path":"objects/obj_lixo_papel/obj_lixo_papel.yy",},},
+    {"id":{"name":"obj_opcoes","path":"objects/obj_opcoes/obj_opcoes.yy",},},
     {"id":{"name":"spr_inimigo_lixo_tiro","path":"sprites/spr_inimigo_lixo_tiro/spr_inimigo_lixo_tiro.yy",},},
     {"id":{"name":"Sprit_quit","path":"sprites/Sprit_quit/Sprit_quit.yy",},},
     {"id":{"name":"obj_inimigo","path":"objects/obj_inimigo/obj_inimigo.yy",},},
@@ -93,6 +94,7 @@
     {"id":{"name":"obj_reciclagem","path":"objects/obj_reciclagem/obj_reciclagem.yy",},},
     {"id":{"name":"obj_inimigo_lixo_tiro","path":"objects/obj_inimigo_lixo_tiro/obj_inimigo_lixo_tiro.yy",},},
     {"id":{"name":"spr_inimigo","path":"sprites/spr_inimigo/spr_inimigo.yy",},},
+    {"id":{"name":"Spr_opcoes","path":"sprites/Spr_opcoes/Spr_opcoes.yy",},},
     {"id":{"name":"spr_lixo_azul","path":"sprites/spr_lixo_azul/spr_lixo_azul.yy",},},
     {"id":{"name":"Spr_menu19","path":"sprites/Spr_menu19/Spr_menu19.yy",},},
     {"id":{"name":"spr_inimigo_ataque","path":"sprites/spr_inimigo_ataque/spr_inimigo_ataque.yy",},},
@@ -110,7 +112,6 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_reciclagem","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},},
   ],
-  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],
