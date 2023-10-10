@@ -70,6 +70,7 @@
     {"id":{"name":"obj_start","path":"objects/obj_start/obj_start.yy",},},
     {"id":{"name":"spr_lixo_organico","path":"sprites/spr_lixo_organico/spr_lixo_organico.yy",},},
     {"id":{"name":"scr_ataque_inimigo_melee","path":"scripts/scr_ataque_inimigo_melee/scr_ataque_inimigo_melee.yy",},},
+    {"id":{"name":"Spr_menu2","path":"sprites/Spr_menu2/Spr_menu2.yy",},},
     {"id":{"name":"obj_hitbox_coleta","path":"objects/obj_hitbox_coleta/obj_hitbox_coleta.yy",},},
     {"id":{"name":"spr_lixo_marrom","path":"sprites/spr_lixo_marrom/spr_lixo_marrom.yy",},},
     {"id":{"name":"spr_player_ataque_hitbox","path":"sprites/spr_player_ataque_hitbox/spr_player_ataque_hitbox.yy",},},
