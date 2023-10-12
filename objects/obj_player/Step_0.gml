@@ -9,7 +9,7 @@ var room_reciclagem = keyboard_check_pressed(ord("T"));
 show_debug_message(estado);
 
 //VAI PARA RM_RECICLAGEM
-if(room_reciclagem){
+if(room_reciclagem) and place_meeting(x,y,obj_ponto_reciclagem){
 	
 	room_goto(rm_reciclagem);
 
