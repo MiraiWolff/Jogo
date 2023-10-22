@@ -150,7 +150,7 @@ switch(estado){
 	//ESTADO CORRENDO
 	case 1:{
 		
-			sprite_index = spr_player_correndo;
+			sprite_index = spr_player1_correndo;
 			
 		if(avanco_h == 0){
 			
@@ -181,7 +181,7 @@ switch(estado){
 			
 		}else if(velocidade_vertical < 0){
 			
-			sprite_index = spr_player_pulando;
+			sprite_index = spr_player1_pulando;
 			
 			//GARANTINDO QUE ANIMAÇÃO NÃO SE REPITA
 			if(image_index >= image_number - 1){
@@ -202,7 +202,7 @@ switch(estado){
 	//ESTADO ATACANDO
 	case 3:{
 		 
-		 sprite_index = spr_player_ataque;
+		 sprite_index = spr_player1_ataque;
 		 
 		 velocidade_h_max = 0;
 	
@@ -219,10 +219,10 @@ switch(estado){
 		
 		velocidade_h_max = 0;
 		pulo = 0;
-		if(sprite_index != spr_player_morte){
+		if(sprite_index != spr_player1_morte){
 			
 			image_index = 0;
-			sprite_index = spr_player_morte;
+			sprite_index = spr_player1_morte;
 		}
 		
 		if(image_index >= image_number - 1){
