@@ -1,0 +1,10 @@
+nome = "primeiro texto";
+
+
+
+
+
+
+
+
+

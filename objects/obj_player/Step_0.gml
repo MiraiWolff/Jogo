@@ -9,7 +9,7 @@ var room_reciclagem = keyboard_check_pressed(ord("T"));
 show_debug_message(estado);
 
 //VAI PARA RM_RECICLAGEM
-if(room_reciclagem){
+if(room_reciclagem) and place_meeting(x,y,obj_ponto_reciclagem){
 	
 	room_goto(rm_reciclagem);
 
@@ -252,7 +252,24 @@ switch(estado){
 	
 }
 
+//DIALOGO
+if distance_to_object(obj_par_npcs) <= 10 {
+	
+	if (keyboard_check_pressed(ord("C")) and global.dialogo == false){
+		var _npc = instance_nearest(x, y, obj_par_npcs);
+		var _dialogo = instance_create_layer(x, y, "Dialogo", obj_dialogo);
+		_dialogo.npc_nome = _npc.nome;
+	}
+}
 
+//NÃO SE MOVER OU PULAR NO DIALOGO
+if(global.dialogo == true){
+	velocidade_h_max = 0;
+	pulo = 0;
+}else{
+	velocidade_h_max = 4;
+	pulo = 9;
+}
 
 
 

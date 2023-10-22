@@ -87,6 +87,7 @@ switch(estado){
 			timer_estado = 0;
 			
 		}
+		
 		scr_ataque_inimigo_melee(obj_player, dist, xscale);
 		
 		
@@ -115,7 +116,7 @@ switch(estado){
 	case 2:{
 		
 		
-		sprite_index = spr_inimigo_morte;
+		sprite_index = spr_inimigo_lixo_morte;
 		
 		if(image_index > image_number -1){
 		
