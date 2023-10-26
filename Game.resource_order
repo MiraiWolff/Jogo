@@ -20,9 +20,9 @@
     {"name":"Lixos","order":8,"path":"folders/Sprites/Lixos.yy",},
     {"name":"Menu","order":6,"path":"folders/Sprites/Menu.yy",},
     {"name":"Player","order":3,"path":"folders/Sprites/Player.yy",},
+    {"name":"Tartaruga","order":12,"path":"folders/Sprites/Tartaruga.yy",},
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
-    {"name":"Tartaruga","order":12,"path":"folders/Sprites/Tartaruga.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_inimigo_lixo_ataque","order":6,"path":"sprites/spr_inimigo_lixo_ataque/spr_inimigo_lixo_ataque.yy",},

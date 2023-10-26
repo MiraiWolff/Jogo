@@ -132,7 +132,7 @@ switch(estado){
 	case 0:{
 		
 			velocidade_h_max = 4;
-			pulo = 9;
+			pulo = 7;
 			sprite_index = spr_player_parado_direita;
 			
 			if(avanco_h != 0){
@@ -268,7 +268,7 @@ if(global.dialogo == true){
 	pulo = 0;
 }else{
 	velocidade_h_max = 4;
-	pulo = 9;
+	pulo = 7;
 }
 
 
