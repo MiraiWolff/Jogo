@@ -18,3 +18,4 @@ alfa_hit = 0;
 alarm[0] = 0;
 dinheiro = 0;
 lixos_coletados = 20;
+pode_atravessar = false;
