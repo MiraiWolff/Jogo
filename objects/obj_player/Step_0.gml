@@ -84,7 +84,7 @@ if(coleta && chao){
 show_debug_message(vida);
 
 //RECEBENDO DANO E FICANDO INTANGIVEL
-if(place_meeting(x, y, obj_inimigo_lixo_tiro)){
+if(place_meeting(x, y, obj_inimigo_lixo_tiro) or place_meeting(x, y, obj_boss1_tiro)){
 	
 	if alarm[0] <=  0{
 		vida -= 1;

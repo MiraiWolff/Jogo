@@ -26,8 +26,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite54",
-    "path": "sprites/Sprite54/Sprite54.yy",
+    "name": "spr_areia",
+    "path": "sprites/spr_areia/spr_areia.yy",
   },
   "spriteMaskId": null,
   "visible": true,
