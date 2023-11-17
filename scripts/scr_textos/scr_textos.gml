@@ -7,7 +7,10 @@ function scr_textos(){
 			texto[1] = "aaaassasasaas";
 		break;
 		case "tartaruga presa":
-			texto[0] = "Socorro me solte";
+			texto[0] = "Socorro me solte, por favor me ajude";
+		break;
+		case "tartaruga":
+			texto[0] = "Muito Obrigado!!!";
 		break;
 	}
 }

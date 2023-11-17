@@ -3,7 +3,7 @@ var _guia = display_get_gui_height();
 
 var _xx = 0;
 var _yy = _guia - 200;
-var _c = c_blue;
+var _c = c_black;
 
 draw_set_font(fnt_dialogo);
 draw_rectangle_color(_xx, _yy, _guil, _guia, _c, _c, _c, _c, false);

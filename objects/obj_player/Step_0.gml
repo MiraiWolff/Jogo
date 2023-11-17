@@ -6,6 +6,7 @@ var coleta = keyboard_check(vk_space);
 var ataque = keyboard_check_pressed(ord("K"));
 var restart = keyboard_check_pressed(ord("R"));
 var room_reciclagem = keyboard_check_pressed(ord("T"));
+var resgate = keyboard_check_pressed(ord("E"));
 show_debug_message(estado);
 
 //VAI PARA RM_RECICLAGEM
@@ -271,6 +272,20 @@ if(global.dialogo == true){
 	pulo = 7;
 }
 
+//SALVAR TARTARUGA
+if (resgate) {
+ 
+    var tartaruga = instance_place(x, y, obj_tartaruga_presa);
 
+    if (tartaruga != noone) {
+        tartaruga.estado = 1;
+		tartarugas_salvas ++;
+    }
+}
+
+//QUEBRAR PORTA BOSS
+if(tartarugas_salvas == 3){
+	instance_destroy(obj_porta_boss1);
+}
 
 
