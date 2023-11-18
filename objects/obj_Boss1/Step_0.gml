@@ -2,10 +2,7 @@ var ataque = keyboard_check_pressed(ord("L"));
 var chao = place_meeting(x, y + 1, obj_chao);
 var hitado = place_meeting(x, y,obj_player_ataque);
 var parede = place_meeting(x + avanco_h, y, obj_chao);
-show_debug_message(estado);
-show_debug_message(timer_estado);
-show_debug_message(vida);
-
+var porta = place_meeting(x + avanco_h, y, obj_porta_boss1);
 var player_X = obj_player.x;
 var player_Y = obj_player.y;
 var start_X = x + lengthdir_x(20, -image_angle);
@@ -57,17 +54,17 @@ y += velocidade_vertical;
 
 
 if (parede){
-	
+	avanco_h = 0
+}
+
+if (porta){
 	avanco_h = 0;
 }
 
 x += avanco_h;
 
-
 //COLISAO COSTAS
 if (collision_line(x, y - 20, x -(dist * xscale), y - 20,obj_player, 0, 1 )) { 
-
-    direction = point_direction(x, y, obj_player.x, obj_player.y);
 	avanco_h = 0;
 	estado = 4;
 	xscale = sign(obj_player.x - x);
@@ -75,7 +72,12 @@ if (collision_line(x, y - 20, x -(dist * xscale), y - 20,obj_player, 0, 1 )) {
 	
 }
 
+//SE VER PAREDE OU PORTA INVERTE A DIREÇÃO
+if (collision_line(x, y - 20, x +(dist_parede * xscale), y - 20,obj_chao, 0, 1 ) or 
+	collision_line(x, y - 20, x +(dist_parede * xscale), y - 20,obj_porta_boss1, 0, 1 )) { 
 
+	avanco_h = -avanco_h;
+}
 
 //ESTADOS
 switch(estado){
@@ -132,13 +134,12 @@ switch(estado){
 	}
 	case 2:{
 		
-		
+		dano_recebido = 0;
 		sprite_index = spr_boss1_morte;
 		
-		if(image_index > image_number -1){
 		
+		if(image_index > image_number -1){
 			instance_destroy();
-			instance_create_layer(x, y - 30,"instances",obj_lixo_latinha);
 			
 		}
 		
@@ -163,6 +164,10 @@ switch(estado){
 			estado = choose(0, 3, 0);
 			timer_estado = 0;
 		
+		}
+		
+		if(avanco_h == 0){
+			estado = 0;
 		}
 		
 		if(hitado){
@@ -205,7 +210,6 @@ switch(estado){
 	
 	
 }
-
 
 
 

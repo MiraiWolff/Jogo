@@ -7,7 +7,7 @@ var ataque = keyboard_check_pressed(ord("K"));
 var restart = keyboard_check_pressed(ord("R"));
 var room_reciclagem = keyboard_check_pressed(ord("T"));
 var resgate = keyboard_check_pressed(ord("E"));
-show_debug_message(estado);
+show_debug_message(tartarugas_salvas);
 
 //VAI PARA RM_RECICLAGEM
 if(room_reciclagem) and place_meeting(x,y,obj_ponto_reciclagem){
@@ -40,6 +40,13 @@ else
 if (place_meeting(x + avanco_h, y, obj_chao))
 {while(!place_meeting(x + sign(avanco_h), y, obj_chao)){
 x += sign(avanco_h);
+}
+	avanco_h = 0;
+}
+
+if (place_meeting(x + avanco_h, y, obj_porta_boss1) and obj_porta_boss1.image_alpha == 1){
+	while(!place_meeting(x + sign(avanco_h), y, obj_porta_boss1)){
+	x += sign(avanco_h);
 }
 	avanco_h = 0;
 }
@@ -106,9 +113,6 @@ if(alarm[0] > 0){
 	
 		image_alpha = 1;
 	}
-	
-show_debug_message(image_alpha);
-show_debug_message(alarm[0]);
 
 //MORTE
 if(vida <= 0){
@@ -281,11 +285,6 @@ if (resgate) {
         tartaruga.estado = 1;
 		tartarugas_salvas ++;
     }
-}
-
-//QUEBRAR PORTA BOSS
-if(tartarugas_salvas == 3){
-	instance_destroy(obj_porta_boss1);
 }
 
 

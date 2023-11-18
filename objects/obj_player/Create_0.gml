@@ -18,4 +18,4 @@ alfa_hit = 0;
 alarm[0] = 0;
 dinheiro = 0;
 lixos_coletados = 20;
-tartarugas_salvas = 0; 
+tartarugas_salvas = 1; 

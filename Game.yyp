@@ -41,7 +41,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.6.0.92",
+    "IDEVersion": "2023.8.0.98",
   },
   "resources": [
     {"id":{"name":"spr_inimigo_lixo_ataque","path":"sprites/spr_inimigo_lixo_ataque/spr_inimigo_lixo_ataque.yy",},},
@@ -59,6 +59,7 @@
     {"id":{"name":"spr_player_pulando","path":"sprites/spr_player_pulando/spr_player_pulando.yy",},},
     {"id":{"name":"obj_npc_teste","path":"objects/obj_npc_teste/obj_npc_teste.yy",},},
     {"id":{"name":"spr_player1_ataque","path":"sprites/spr_player1_ataque/spr_player1_ataque.yy",},},
+    {"id":{"name":"spr_porta_boss1_queda","path":"sprites/spr_porta_boss1_queda/spr_porta_boss1_queda.yy",},},
     {"id":{"name":"spr_plataforma","path":"sprites/spr_plataforma/spr_plataforma.yy",},},
     {"id":{"name":"spr_areia","path":"sprites/spr_areia/spr_areia.yy",},},
     {"id":{"name":"obj_lixo_papel","path":"objects/obj_lixo_papel/obj_lixo_papel.yy",},},
@@ -120,6 +121,7 @@
     {"id":{"name":"obj_lixo_marrom","path":"objects/obj_lixo_marrom/obj_lixo_marrom.yy",},},
     {"id":{"name":"obj_ponto_reciclagem","path":"objects/obj_ponto_reciclagem/obj_ponto_reciclagem.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
+    {"id":{"name":"spr_porta_boss1_sobe","path":"sprites/spr_porta_boss1_sobe/spr_porta_boss1_sobe.yy",},},
     {"id":{"name":"spr_player_vida","path":"sprites/spr_player_vida/spr_player_vida.yy",},},
     {"id":{"name":"obj_socorro","path":"objects/obj_socorro/obj_socorro.yy",},},
     {"id":{"name":"spr_player_parado_direita","path":"sprites/spr_player_parado_direita/spr_player_parado_direita.yy",},},
@@ -165,6 +167,7 @@
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"roomId":{"name":"rm_reciclagem","path":"rooms/rm_reciclagem/rm_reciclagem.yy",},},
   ],
+  "templateType": null,
   "TextureGroups": [
     {"resourceType":"GMTextureGroup","resourceVersion":"1.3","name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"targets":-1,},
   ],

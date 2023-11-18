@@ -57,7 +57,31 @@ if (parede){
 
 x += avanco_h;
 
+//COLISAO COSTAS
+if (collision_line(x, y - 20, x -(dist * xscale), y - 20,obj_player, 0, 1 )) { 
 
+	avanco_h = 0;
+	estado = 4;
+	xscale = sign(obj_player.x - x);
+	image_xscale = xscale;
+	
+}
+
+//SE VER PAREDE OU PORTA INVERTE A DIREÇÃO
+if (collision_line(x, y - 20, x +(dist_parede * xscale), y - 20,obj_chao, 0, 1 ) or 
+	collision_line(x, y - 20, x +(dist_parede * xscale), y - 20,obj_porta_boss1, 0, 1 )) { 
+	
+	estado = 3;
+	avanco_h = -avanco_h;
+	
+}
+
+//VERIFICA SE NÃO TEM CHÃO
+if (collision_line(x + (50 * xscale), y + 32, x +(50 * xscale), y - 32, obj_chao, 0, 1 )) { 
+	avanco_h = avanco_h;
+}else{
+	avanco_h = -avanco_h;
+}
 
 //ESTADOS
 switch(estado){

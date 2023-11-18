@@ -11,7 +11,7 @@ timer_estado = 0;
 avanco_h = 0;
 lado = 0;
 randomize();
-
+dist_parede = 80;
 dist = 100;
 
 
