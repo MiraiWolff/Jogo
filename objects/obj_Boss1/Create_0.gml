@@ -1,4 +1,4 @@
-vida = 15;
+vida = 5;
 velocidade = 2
 gravidade = 0.3;
 velocidade_voar = 0.4;

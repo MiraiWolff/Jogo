@@ -7,6 +7,8 @@ var ataque = keyboard_check_pressed(ord("K"));
 var restart = keyboard_check_pressed(ord("R"));
 var room_reciclagem = keyboard_check_pressed(ord("T"));
 var resgate = keyboard_check_pressed(ord("E"));
+var espinho = place_meeting(x, y + 1, obj_espinho);
+var loja= place_meeting(x, y, obj_loja);
 show_debug_message(tartarugas_salvas);
 
 //VAI PARA RM_RECICLAGEM
@@ -25,14 +27,12 @@ var avanco_h = (direita - esquerda) * velocidade_h_max;
 
 
  // GRAVIDADE
-if (!chao)
-{
+if (!chao){
   velocidade = velocidade_voar;
   velocidade_vertical += gravidade;
+  show_debug_message(velocidade_vertical);
   
-}
-else
-{
+}else{
    velocidade = velocidade_terreno
 }
 
@@ -92,7 +92,7 @@ if(coleta && chao){
 show_debug_message(vida);
 
 //RECEBENDO DANO E FICANDO INTANGIVEL
-if(place_meeting(x, y, obj_inimigo_lixo_tiro) or place_meeting(x, y, obj_boss1_tiro)){
+if(place_meeting(x, y, obj_inimigo_lixo_tiro) or place_meeting(x, y, obj_boss1_tiro) or place_meeting(x, y + 1, obj_espinho)){
 	
 	if alarm[0] <=  0{
 		vida -= 1;
@@ -120,6 +120,8 @@ if(vida <= 0){
 	estado = 4;
 	image_alpha = 1;
 	alarm[0] = 0;
+    global.game_over = true;
+
 }
 
 
@@ -287,4 +289,16 @@ if (resgate) {
     }
 }
 
+//ESPINHO
+if(espinho){
+	velocidade_vertical += -pulo_espinho;
+}
 
+//LOJA 
+if (place_meeting(x, y, obj_loja) and keyboard_check_pressed(ord("T"))) {
+    global.player_x = obj_player.x;
+    global.player_y = obj_player.y;
+
+
+    room_goto(rm_loja);
+}
